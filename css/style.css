@@ -1,3 +1,15 @@
+@media (max-width:910px) {
+
+}
+
+@media (max-width:768px) {
+
+}
+
+@media (max-width:480px){
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,7 +20,7 @@ body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
 	color: #e5e5e5;
 	font-size: 12px;
-	background: #bfbfbf;
+	background: grey;
 }
 
 h1, h2 {
@@ -73,9 +85,9 @@ a {
 }
 
 .inner:after {
-	  content: "";
-	  display: table;
-	  clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 .subMenu {
@@ -119,7 +131,6 @@ a {
 	color: #3d3d3d;
 	padding: 50px 0;
 	height: 300px;
-	
 }
 
 .subMenu a {
@@ -127,6 +138,10 @@ a {
 }
 
 .subMenu a:hover {
+	background: #1783c7;
+}
+
+.subMenu a:active {
 	background: #1783c7;
 }
 
@@ -145,8 +160,3 @@ a {
 #section4 {
 	background: white;
 }
-
-
-
-
-

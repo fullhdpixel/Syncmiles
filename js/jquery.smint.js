@@ -1,20 +1,4 @@
-/*
-
-SMINT V1.0 by Robert McCracken
-SMINT V2.0 by robert McCracken with some awesome help from Ryan Clarke (@clarkieryan) and mcpacosy ‏(@mcpacosy)
-SMINT V3.0 by robert McCracken with some awesome help from Ryan Clarke (@clarkieryan) and mcpacosy ‏(@mcpacosy)
-
-SMINT is my first dabble into jQuery plugins!
-
-http://www.outyear.co.uk/smint/
-
-If you like Smint, or have suggestions on how it could be improved, send me a tweet @rabmyself
-
-*/
-
-
 (function(){
-
 
 	$.fn.smint = function( options ) {
 
@@ -25,9 +9,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 
 		// adding a class to users div
 		$(this).addClass('smint');
-
-
-				
 		
 		//Set the variables needed
 		var optionLocs = new Array(),
@@ -37,10 +18,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
         	smintA = $('.smint a'),
         	myOffset = smint.height();
 
-      
-
-
-
 		if ( settings.scrollSpeed ) {
 				var scrollSpeed = settings.scrollSpeed
 			}
@@ -48,8 +25,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 		if ( settings.mySelector ) {
 				var mySelector = settings.mySelector
 		};
-
-
 
 		return smintA.each( function(index) {
             
@@ -59,14 +34,11 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				$(this).attr('id', id);
 			}
 
-			
 			//Fill the menu
 			optionLocs.push(Array(
 				$(mySelector+"."+id).position().top-menuHeight, 
 				$(mySelector+"."+id).height()+$(mySelector+"."+id).position().top, id)
 			);
-
-			///////////////////////////////////
 
 			// get initial top offset for the menu 
 			var stickyTop = smint.offset().top;	
@@ -137,8 +109,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
    					smintA.last().removeClass('active')
    				}
 			});
-
-			///////////////////////////////////////
         
         	$(this).on('click', function(e){
 				// gets the height of the users div. This is used for off-setting the scroll so the menu doesnt overlap any content in the div they jst scrolled to
@@ -149,8 +119,6 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 				
 				// get the hash of the button you just clicked
 				var hash = $(this).attr('href').split('#')[1];
-
-				
 
 				var goTo =  $(mySelector+'.'+ hash).offset().top-myOffset;
 				
@@ -167,7 +135,7 @@ If you like Smint, or have suggestions on how it could be improved, send me a tw
 			});	
 
 
-			//This lets yo use links in body text to scroll. Just add the class 'intLink' to your button and it will scroll
+			//This lets you use links in body text to scroll. Just add the class 'intLink' to your button and it will scroll
 
 			$('.intLink').on('click', function(e){
 				var myOffset = smint.height();   
