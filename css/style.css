@@ -18,9 +18,14 @@
 
 body {
 	font-family: Helvetica, Arial, Verdana, sans-serif;
-	color: #e5e5e5;
+	color: black;
 	font-size: 12px;
 	background: grey;
+	background: url(background.png) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 h1, h2 {
@@ -36,7 +41,11 @@ h1 {
 }
 
 h2 {
-	font-size: 24px;
+	font-size: 28px;
+}
+
+h3 {
+	font-size: 22px;
 }
 
 p {
@@ -45,6 +54,11 @@ p {
 
 a {
 	color: #3e3e3e;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: white !important;
 }
 
 .clear {
@@ -70,7 +84,7 @@ a {
 	position: relative;
 	margin: 0 auto;
 	padding: 0 0 20px 0;
-	height: 500px;
+	height: 750px;
 }
 
 .inner {
@@ -93,6 +107,7 @@ a {
 .subMenu {
 	height: 50px;
 	z-index: 1000;
+	left: 0;
 	width: 100%;
 	background: #0977bc;
 }
@@ -105,7 +120,7 @@ a {
 
 .subNavBtn {
 	display: block;
-	height: 35px;
+	height: 50px;
 	width: 20%;
 	float: left;
 	margin: 0px 0px 0 0;
@@ -159,4 +174,14 @@ a {
 
 #section4 {
 	background: white;
+}
+
+#footer {
+	min-width: 100% !important;
+	background: #e2e2e2;
+}
+
+ul li {
+	font-size: 18px;
+	line-height: 200%;
 }
