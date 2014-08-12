@@ -168,6 +168,11 @@ a:hover {
 	background: white;
 }
 
+#section2 img {
+	max-width: 150px;
+	height: auto;
+}
+
 #section3 {
 	background: white;
 }
@@ -179,6 +184,10 @@ a:hover {
 #footer {
 	min-width: 100% !important;
 	background: #e2e2e2;
+}
+
+#footer a:hover {
+	color: blue;
 }
 
 ul li {
